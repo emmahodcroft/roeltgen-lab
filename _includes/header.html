@@ -1,0 +1,15 @@
+
+<header class="site-header">
+  <div class="container navbar">
+    <div class="branding">
+      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+      <span class="site-subtitle">{{ site.description }}</span>
+    </div>
+    <nav class="nav-links nav-panel" data-nav-menu>
+      {% for item in site.data.nav %}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+    <button class="nav-toggle" data-nav-toggle aria-label="Menu">☰</button>
+  </div>
+</header>

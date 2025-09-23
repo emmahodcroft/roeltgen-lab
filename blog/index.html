@@ -1,0 +1,24 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+{% if paginator %}{% assign posts = paginator.posts %}{% else %}{% assign posts = site.posts %}{% endif %}
+<div class="grid grid-2">
+  {% for post in posts %}
+  <article class="card">
+    {% if post.image %}<div class="card-img" style="background-image:url('{{ post.image | relative_url }}')"></div>{% endif %}
+    <div class="card-body">
+      <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <div class="card-meta">{{ post.date | date: "%B %d, %Y" }}</div>
+      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% if paginator and paginator.total_pages > 1 %}
+<p>
+  {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer</a>{% endif %}
+  {% if paginator.next_page %}<a style="float:right" href="{{ paginator.next_page_path | relative_url }}">Older &rarr;</a>{% endif %}
+</p>
+{% endif %}

@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="hero-inner container">
+    <div class="hero-text">
+      <h1 class="hero-title">{{ page.hero_title | default: "Röltgen Lab — Virus Immunology" }}</h1>
+      <p class="hero-subtitle">{{ page.hero_subtitle | default: "We study human immune responses to viral infection and vaccination." }}</p>
+    </div>
+    <div class="hero-slider" aria-label="Lab photos slideshow">
+      {% assign photos = page.photos | default: site.data.home_photos %}
+      {% for p in photos %}
+      <div class="slide" style="background-image:url('{{ p | relative_url }}')"></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include home-people.html %}
+
+<section class="content">
+  <div class="container">
+    <h2 class="page-title">Featured Projects</h2>
+    <div class="grid grid-3">
+      {% assign featured = site.projects | slice: 0,3 %}
+      {% for item in featured %}
+      <article class="card">
+        {% if item.image %}<div class="card-img" style="background-image:url('{{ item.image | relative_url }}')"></div>{% endif %}
+        <div class="card-body">
+          <h3 class="card-title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+          {% if item.summary %}<div class="card-meta">{{ item.summary }}</div>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script src="{{ '/assets/js/slider.js' | relative_url }}" defer></script>

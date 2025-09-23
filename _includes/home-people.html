@@ -1,0 +1,24 @@
+<section class="home-people">
+  <div class="container">
+    <div class="home-people-head">
+      <h2 class="page-title">Meet the Lab</h2>
+      <a class="home-people-more" href="{{ '/people/' | relative_url }}">View all →</a>
+    </div>
+
+    <div class="avatar-grid">
+      {% assign limit = page.people_limit | default: 12 %}
+      {% assign folks = site.people | sort: 'order' | slice: 0, limit %}
+      {% for person in folks %}
+      <a class="avatar-card" href="{{ person.url | relative_url }}">
+        {% if person.photo %}
+          <div class="avatar-img" style="background-image:url('{{ person.photo | relative_url }}')"></div>
+        {% else %}
+          <div class="avatar-fallback">{{ person.name | slice: 0,1 | upcase }}</div>
+        {% endif %}
+        <div class="avatar-name">{{ person.name }}</div>
+        {% if person.role %}<div class="avatar-role">{{ person.role }}</div>{% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="content">
+  <h1 class="page-title">{{ page.name }}</h1>
+  {% if page.photo %}<img src="{{ page.photo | relative_url }}" alt="{{ page.name }}" style="max-width:240px;float:right;margin:0 0 1rem 1rem;border-radius:12px;" />{% endif %}
+  <p class="card-meta">{% if page.role %}{{ page.role }}{% endif %}{% if page.email %} · <a href="mailto:{{ page.email }}">{{ page.email }}</a>{% endif %}</p>
+  <div class="prose">{{ content }}</div>
+  {% if page.links %}
+  <p>
+    {% for l in page.links %}
+      <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% unless forloop.last %} · {% endunless %}
+    {% endfor %}
+  </p>
+  {% endif %}
+</article>

@@ -1,0 +1,65 @@
+
+title: "Röltgen Lab"
+description: "Virus Immunology — Röltgen Group"
+url: ""
+baseurl: ""
+lang: en
+timezone: Europe/Zurich
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  collaborations:
+    output: true
+    permalink: /collaborations/:path/
+  people:
+    output: true
+    permalink: /people/:path/
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+paginate: 6
+paginate_path: "/blog/page:num"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+branding:
+  primary: "#1f6f78"
+  accent: "#e1a23a"
+  bg: "#f7faf9"
+  text: "#1d1f21"
+  serif: "'Source Serif 4', Georgia, serif"
+  sans: "'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "item"
+      collection_label: "Projects"
+  - scope:
+      path: ""
+      type: "collaborations"
+    values:
+      layout: "item"
+      collection_label: "Collaborations"
+  - scope:
+      path: ""
+      type: "people"
+    values:
+      layout: "person"
+      collection_label: "People"
+
+social:
+  name: "Röltgen Lab"
+  links:
+    - https://github.com/roeltgenlab
+
+feed:
+  path: feed.xml
