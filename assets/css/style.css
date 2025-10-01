@@ -250,3 +250,30 @@ a:hover{text-decoration:underline}
 @media (max-width: 560px) {
   .person-hero { flex-direction: column; text-align:center; }
 }
+
+.project-image {
+  max-width: 700px; /* adjust as you like */
+  margin: 1.5rem auto;
+}
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* optional */
+}
+.project-links {
+  margin-top: 2rem;
+}
+
+/* Collaboration detail pages */
+.collab-image {
+  max-width: 500px;   /* tweak this number to taste (e.g., 560 / 800) */
+  margin: 1.5rem auto;
+}
+.collab-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* optional */
+}
+.collab-links { margin-top: 2rem; }
+

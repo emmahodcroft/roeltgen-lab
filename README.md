@@ -62,3 +62,4 @@ Open http://localhost:4000
 - [ ] Do automatic rebuilds by Github
 - [ ] Resize pictures in projects & collaborations
 - [ ] Put real info in all people profiles
+- [ ] Update links in bottom right (Github, Twitter)

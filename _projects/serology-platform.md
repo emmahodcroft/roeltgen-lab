@@ -1,4 +1,5 @@
 ---
+layout: project
 title: Serology platform for emerging viruses
 summary: Building robust, scalable assays for antibody profiling.
 image: /assets/img/projects/serology.jpg

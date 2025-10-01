@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="collab">
+  <h1 class="collab-title">{{ page.title }}</h1>
+
+  {% if page.image %}
+  <div class="collab-image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  {% if page.links %}
+  <div class="collab-links">
+    <h3>Links</h3>
+    <ul>
+      {% for l in page.links %}
+      <li><a href="{{ l.url }}">{{ l.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</article>
