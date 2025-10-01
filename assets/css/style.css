@@ -277,3 +277,52 @@ a:hover{text-decoration:underline}
 }
 .collab-links { margin-top: 2rem; }
 
+
+/* Wider, even grid */
+.home-people .avatar-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* slightly wider cards */
+  gap: 1.25rem;
+  align-items: stretch; /* stretch items to tallest in the row */
+}
+
+/* Make each card a column and pin icons to bottom */
+.home-people .avatar-card{
+  display: flex;
+  flex-direction: column;
+  height: 100%;                /* ensures equal heights per row */
+  padding: 1rem;
+  border-radius: 14px;
+}
+
+/* Tidy image circle (optional if you already have this) */
+.home-people .avatar-img{
+  width: 96px; height: 96px;
+  margin: 0 auto .75rem;
+  border-radius: 9999px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Reserve space for name/role to align cards vertically */
+.home-people .avatar-name{
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.25;
+  min-height: calc(1.25em * 2);  /* up to 2 lines of name */
+}
+
+.home-people .avatar-role{
+  text-align: center;
+  opacity: .8;                  /* or your muted color */
+  line-height: 1.25;
+  min-height: calc(1.25em * 2);  /* up to 2 lines of role */
+}
+
+/* Icons row aligned across the row */
+.home-people .avatar-social{
+  margin-top: auto;             /* pushes icons to the bottom of the card */
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+}
