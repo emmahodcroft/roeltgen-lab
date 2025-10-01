@@ -1,15 +1,13 @@
 ---
-name: Prof. Katharina Röltgen
+name: Katharina Röltgen
 role: Principal Investigator
 order: 1
+team: member
 photo: /assets/img/people/katharina.jpg
 email: katharina.roeltgen@example.org
-links:
-  - label: Google Scholar
-    url: https://scholar.google.com/
-  - label: ORCID
-    url: https://orcid.org/
-  - label: Twitter
-    url: https://twitter.com/
+social:
+  orcid:     https://orcid.org/0000-0002-1582-1720
+  linkedin:  https://ch.linkedin.com/in/katharina-r%C3%B6ltgen-187518118
+  google_scholar: https://scholar.google.com/citations?user=q0m0smgAAAAJ&hl=en
 ---
 Short bio goes here. Add research focus, recent awards, and interests.

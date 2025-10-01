@@ -54,3 +54,11 @@ Open http://localhost:4000
 - `_data/nav.yml` → navigation
 - `index.md` → home hero text and `photos:`
 - `_data/socials.yml` → lab socials
+
+
+# To do list
+- [ ] Add the final logo file
+- [ ] Add logo as icon too
+- [ ] Do automatic rebuilds by Github
+- [ ] Resize pictures in projects & collaborations
+- [ ] Put real info in all people profiles

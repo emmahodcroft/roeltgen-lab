@@ -10,6 +10,30 @@
   --color-text:    {{ site.branding.text    | default: "#1d1f21" }};
   --font-serif:    {{ site.branding.serif   | default: "Merriweather, Georgia, serif" }};
   --font-sans:     {{ site.branding.sans    | default: "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" }};
+
+  /* Brand palette: blue → purple */
+  --color-primary: #3B57A6; /* indigo (links, headings accents) */
+  --color-accent:  #7B3FA0; /* royal purple (buttons, highlights) */
+
+  /* Neutrals (keep the clean, airy feel) */
+  --color-bg:      #F7FAF9; /* page background */
+  --color-surface: #FFFFFF; /* cards, header/footer surfaces */
+  --color-text:    #1D1F21; /* body text */
+  --color-muted:   rgba(0,0,0,0.6); /* subtitles/meta text */
+
+  /* Subtle tints for UI chrome */
+  --tint-1:        rgba(59, 87, 166, 0.08);  /* primary tint */
+  --tint-2:        rgba(123, 63, 160, 0.10); /* accent tint */
+
+  /* Harmonised gradient (use sparingly: hero, avatar fallbacks) */
+  --grad-start:    #3B57A6;  /* indigo */
+  --grad-mid:      #3AA0B2;  /* soft teal nod to logo center */
+  --grad-end:      #7B3FA0;  /* purple */
+
+  /* Helpful derived colors */
+  --link-hover:    #2E4690;  /* darker primary for hover */
+  --border-subtle: rgba(0,0,0,0.06);
+  --shadow-soft:   0 10px 22px rgba(0,0,0,0.08);
 }
 
 *{box-sizing:border-box}
@@ -23,9 +47,9 @@ a:hover{text-decoration:underline}
 .site-header{background:#fff;border-bottom:1px solid rgba(0,0,0,0.06);position:sticky;top:0;z-index:40}
 .navbar{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.8rem 0}
 .branding{display:flex;align-items:baseline;gap:.5rem}
-.branding .site-title{font-family:var(--font-serif);font-weight:800;letter-spacing:.4px;color:var(--color-primary);font-size:1.35rem;margin:0}
-.branding .site-subtitle{color:rgba(0,0,0,.6);font-size:.95rem}
-.nav-links{display:flex;gap:1rem;align-items:center}
+.branding .site-title{font-family:var(--font-serif);font-weight:800;letter-spacing:.4px;color:var(--color-primary);font-size:1.55rem;margin:0}
+.branding .site-subtitle{color:rgba(0,0,0,.6);font-size:1.05rem}
+.nav-links{display:flex;gap:1rem;align-items:center;font-size:1.05rem}
 .nav-toggle{display:none}
 @media (max-width:800px){.nav-links{display:none}.nav-toggle{display:inline-flex;background:transparent;border:none;font-size:1.4rem}.nav-panel{display:block}.nav-panel.hidden{display:none}}
 
@@ -98,3 +122,131 @@ a:hover{text-decoration:underline}
 }
 .avatar-name { font-weight:700; line-height:1.25; }
 .avatar-role { font-size:0.9rem; color: rgba(0,0,0,0.6); }
+
+/*logo styling */
+.site-logo {
+  height: 44px;         /* was ~36px, bumped for balance */
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;           /* space between logo and text */
+}
+
+/* about page styling */
+.about-columns h2 { 
+  margin-top: 0; 
+  color: var(--color-primary);
+}
+.about-columns ul { 
+  margin: 0.5rem 0 0; 
+  padding-left: 1.1rem; 
+}
+
+
+/* Social icons under member cards */
+.avatar-social {
+  display:flex;
+  gap: .5rem;
+  justify-content:center;
+  margin-top: .45rem;
+}
+
+.avatar-social a {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  border: 1px solid var(--border-subtle);
+  color: var(--color-primary);
+  background: #fff;
+  transition: transform .12s ease, box-shadow .12s ease, color .12s ease, border-color .12s ease;
+}
+
+.avatar-social a:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
+  color: var(--color-accent);
+  border-color: rgba(0,0,0,0.12);
+}
+
+.avatar-social svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+/* People index grid */
+.people-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+@media (max-width: 1000px) { .people-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 720px)  { .people-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 460px)  { .people-grid { grid-template-columns: 1fr; } }
+
+.person-card {
+  background: #fff;
+  border: 1px solid var(--border-subtle, rgba(0,0,0,0.06));
+  border-radius: 14px;
+  padding: 1rem .9rem;
+  text-align: center;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.person-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-soft, 0 10px 22px rgba(0,0,0,0.08)); }
+
+.person-photo {
+  width: 110px; height: 110px;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 30%, var(--color-primary), var(--color-accent));
+  background-size: cover; background-position: center;
+  margin: 0 auto .6rem; display: block;
+  overflow: hidden;
+}
+.person-fallback {
+  width: 100%; height: 100%;
+  display:flex; align-items:center; justify-content:center;
+  color:#fff; font-weight:800; font-family: var(--font-serif);
+}
+
+.person-name { margin: 0.25rem 0 0; font-weight: 800; }
+.person-name a { color: var(--color-text); text-decoration: none; }
+.person-name a:hover { color: var(--color-primary); text-decoration: underline; }
+.person-role { color: rgba(0,0,0,0.6); font-size: 0.95rem; }
+
+/* Social icons (shared with About) */
+.avatar-social {
+  display:flex; gap:.5rem; justify-content:center; margin-top:.5rem;
+}
+.avatar-social a {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:28px; height:28px; border-radius:9999px;
+  border:1px solid var(--border-subtle, rgba(0,0,0,0.06));
+  color: var(--color-primary); background:#fff;
+  transition: transform .12s ease, box-shadow .12s ease, color .12s ease, border-color .12s ease;
+}
+.avatar-social a:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft, 0 10px 22px rgba(0,0,0,0.08));
+  color: var(--color-accent); border-color: rgba(0,0,0,0.12);
+}
+.avatar-social svg { width:14px; height:14px; fill: currentColor; }
+
+/* Person detail layout */
+.person-layout .person-header { margin-bottom: 1rem; }
+.person-hero { display:flex; align-items:center; gap: 1rem; }
+.person-hero-photo {
+  width: 120px; height: 120px; border-radius: 9999px;
+  background-size: cover; background-position: center;
+  background-color: #eaeaea; flex: 0 0 auto;
+}
+.person-hero-meta { min-width: 0; }
+@media (max-width: 560px) {
+  .person-hero { flex-direction: column; text-align:center; }
+}

@@ -1,10 +1,16 @@
-
 <header class="site-header">
   <div class="container navbar">
     <div class="branding">
+      <!-- NEW: Logo image -->
+      <a href="{{ '/' | relative_url }}">
+        <img src="/assets/img/home/test-logo.png" alt="Röltgen Lab Logo" class="site-logo">
+      </a>
+
+      <!-- Existing title & subtitle -->
       <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
       <span class="site-subtitle">{{ site.description }}</span>
     </div>
+
     <nav class="nav-links nav-panel" data-nav-menu>
       {% for item in site.data.nav %}
         <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
