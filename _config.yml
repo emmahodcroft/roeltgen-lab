@@ -2,7 +2,7 @@
 title: "Röltgen Lab"
 description: "Virus Immunology — Röltgen Group"
 url: "https://emmahodcroft.github.io"
-baseurl: "roeltgen-lab"
+baseurl: "/roeltgen-lab"
 lang: en
 timezone: Europe/Zurich
 
