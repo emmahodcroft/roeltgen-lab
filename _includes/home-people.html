@@ -11,10 +11,11 @@
 	{%- assign members = with_order | concat: without_order -%}
     {%- for p in members -%}
       <div class="avatar-card">
+        <a class="avatar-link" href="{{ p.url | relative_url }}" aria-label="View {{ p.name }}"></a>
+
         {%- if p.photo -%}
           <div class="avatar-img" style="background-image:url('{{ p.photo | relative_url }}');"></div>
         {%- else -%}
-          <!-- fallback: initials gradient -->
           <div class="avatar-fallback">
             {{ p.name | split:' ' | map:'first' | join:'' | slice:0,1 | upcase }}{{ p.name | split:' ' | last | slice:0,1 | upcase }}
           </div>

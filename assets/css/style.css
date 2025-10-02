@@ -340,3 +340,20 @@ a:hover{text-decoration:underline}
 
 /* Optional: match your theme */
 .dark .pill{ background:rgba(255,255,255,.12); }
+
+.home-people .avatar-card{
+  position: relative;  /* needed for the stretched link */
+}
+
+.home-people .avatar-link{
+  position: absolute;
+  inset: 0;           /* stretch to full card */
+  z-index: 1;         /* sits under the socials */
+}
+
+/* Keep social icons clickable above the stretched link */
+.home-people .avatar-social{
+  position: relative;
+  z-index: 2;
+}
+
