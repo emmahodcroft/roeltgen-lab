@@ -10,6 +10,9 @@ social:
   orcid:     https://orcid.org/0000-0000-0000-0000
   linkedin:  https://www.linkedin.com/in/your-handle/
   github:    https://github.com/your-handle
+interests:
+  - Tackling the latest lab techniques
+  - Enjoying a sweet treat
 ---
 
 Nema Ahmed Alfaki is an MSc student at Swiss TPH who is pursuing her MSc project in both [EVE](https://eve-lab.org/) and VIM.

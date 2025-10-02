@@ -10,6 +10,9 @@ social:
   orcid:     https://orcid.org/0000-0000-0000-0000
   linkedin:  https://www.linkedin.com/in/your-handle/
   github:    https://github.com/your-handle
+interests:
+  - Finishing the last slice of cake
+  - Combining computers & labwork
 ---
 
 Kai Wanner is an MSc student at Swiss TPH who is pursuing his MSc project in both [EVE](https://eve-lab.org/) and VIM.

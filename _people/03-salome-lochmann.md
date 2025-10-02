@@ -10,5 +10,8 @@ social:
   orcid:     https://orcid.org/0000-0000-0000-0000
   linkedin:  https://www.linkedin.com/in/your-handle/
   github:    https://github.com/your-handle
+interests:
+  - Zipping around on her scooter
+  - Finding delicious cake
 ---
 Interested in B-cell responses and neutralization assays.

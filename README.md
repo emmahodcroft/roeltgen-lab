@@ -66,11 +66,10 @@ At the moment, please just edit content - if you'd like to add a feature or chan
 - 'Role' ex: PhD student, MSc student
 - 'Team' for future sorting on the `/people` page (ex: member, alumni, visitor)
 - Social and academic links (Github, Google Scholar, ORCiD, Linkedin etc)
+- Interests (add as many as you like)
 - Text that you write about yourself, as the main content (maybe your background, about you, projects)
 
 To change your photo, the easiest thing to do is to just replace the photo of yourself `assets/img/people` with another photo of the same name. Ensure your photo is roughtly square (or it won't crop correctly) and isn't huge (will load slowly). Resize if you need!
-
-_I'll add more fields soon_
 
 ## Changing Projects & Collaborations
 To edit a project or a collaboration, just find the corresponding `.md` file in `_projects/` or `_collaborations/`. To change their photos, add the image to `assets/img/projects` or `assets/img/collabs` and modify the `image:` property in the .md file.
@@ -87,7 +86,7 @@ To edit images, you can either replace the existing images (in folder `/assets/i
 # To do list
 - [ ] Add the final logo file
 - [ ] Add logo as icon too
-- [ ] Do automatic rebuilds by Github
+- [x] Do automatic rebuilds by Github
 - [ ] Resize pictures in projects & collaborations
 - [ ] Put real info in all people profiles
 - [ ] Update links in bottom right (Github, Twitter)

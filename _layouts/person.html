@@ -53,4 +53,15 @@ layout: default
   <div class="prose">
     {{ content }}
   </div>
+
+  {% if page.interests %}
+  <section class="person-interests">
+  <h3>Interests</h3>
+  <ul class="pill-list">
+    {% for it in page.interests %}
+      <li class="pill">{{ it }}</li>
+    {% endfor %}
+  </ul>
+  </section>
+  {% endif %}
 </article>
