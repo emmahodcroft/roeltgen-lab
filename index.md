@@ -2,7 +2,7 @@
 layout: home
 title: Home
 hero_title: Röltgen Lab — Virus Immunology
-hero_subtitle: We investigate human immune responses to viral infection and vaccination.
+hero_subtitle: "From infection to protection: investigating immune responses to viruses and vaccines"
 photos:
   - /assets/img/home/hero1.jpg
   - /assets/img/home/hero2.jpg

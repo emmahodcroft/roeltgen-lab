@@ -4,23 +4,26 @@ title: About
 permalink: /about/
 ---
 
-Welcome to the Röltgen Lab. We focus on the immunology of viral infections and vaccines, combining clinical cohorts with advanced laboratory and computational approaches.
+Welcome to Virus Immunology (VIM)! We focus on the immunology of viral infections and vaccines, combining clinical cohorts with advanced laboratory and computational approaches.
 
 <div class="grid grid-2 about-columns">
   <section>
     <h2>Our story</h2>
     <p>
-      The Röltgen Lab investigates how antibodies and cellular immunity respond to viral infection and vaccination.
-      We work across clinical cohorts and controlled experimental systems, integrating wet-lab assays with computational analysis.
+	The Viral Immunology group studies human immune responses to viral infection and vaccination using a combination of functional antibody and B cell receptor repertoire analyses. The goal of our research is to characterize immune responses in African compared to U.S. and European populations, with a current focus on responses to SARS-CoV-2 and other human coronaviruses as well as to COVID-19 vaccination. We also develop viral antigen capture assays based on human and mouse monoclonal antibodies that we generate by antigen-specific single B cell sorting and hybridoma technology. Assays will be used to study the epidemiology of viral infections in African populations.
     </p>
     <p>
-      Our team values open methods, careful measurement, and collaboration—both within Basel and across international partners.
+	In contrast to soaring COVID-19 case numbers during pandemic waves in the Americas and Europe, large parts of Africa have reported low numbers of severe SARS-CoV-2 infections and COVID-19-related deaths. Hypotheses to explain this observation include differential innate and adaptive immune mechanisms of protection in different populations.
+    </p>
+    <p>
+	Much has been learnt about immune responses to SARS-CoV-2 in U.S. and European COVID-19 patients, contributing to the development of effective vaccines. Similar studies in African populations with different immunological backgrounds are required to define shared and distinct, potentially beneficial features of immune responses to SARS-CoV-2 and to investigate the nature and longevity of infection- and vaccine-induced immunity to adequately tailor required public health interventions to different populations.
     </p>
   </section>
 
   <section>
     <h2>Our goals</h2>
     <ul>
+      <li>Our team values open methods, careful measurement, and collaboration—both within Basel and across international partners.</li>
       <li>Map how prior exposures shape immune responses to new variants.</li>
       <li>Develop robust, sharable assays and analysis pipelines.</li>
       <li>Support equitable data sharing and reproducible science.</li>
@@ -31,64 +34,4 @@ Welcome to the Röltgen Lab. We focus on the immunology of viral infections and 
 
 <hr>
 
-<section class="home-people">
-  <div class="home-people-head">
-    <h2>The lab</h2>
-    <a class="home-people-more" href="{{ '/people/' | relative_url }}">See all members →</a>
-  </div>
-
-  <div class="avatar-grid">
-    {%- assign people = site.people -%}
-	{%- assign with_order = people | where_exp: "p", "p.order" | sort: "order" -%}
-	{%- assign without_order = people | where_exp: "p", "p.order == nil" | sort: "name" -%}
-	{%- assign members = with_order | concat: without_order -%}
-    {%- for p in members -%}
-      <div class="avatar-card">
-        {%- if p.photo -%}
-          <div class="avatar-img" style="background-image:url('{{ p.photo | relative_url }}');"></div>
-        {%- else -%}
-          <!-- fallback: initials gradient -->
-          <div class="avatar-fallback">
-            {{ p.name | split:' ' | map:'first' | join:'' | slice:0,1 | upcase }}{{ p.name | split:' ' | last | slice:0,1 | upcase }}
-          </div>
-        {%- endif -%}
-
-        <div class="avatar-name">{{ p.name }}</div>
-        <div class="avatar-role">{{ p.role }}</div>
-
-        {%- if p.social -%}
-        <div class="avatar-social">
-          {%- if p.social.bluesky -%}
-          <a href="{{ p.social.bluesky }}" aria-label="Bluesky" title="Bluesky" target="_blank" rel="noopener">
-            <!-- Simple placeholder butterfly mark; swap when you have a final SVG -->
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9c2.5-3.5 7-5 9-2.5S18 14 12 20C6 14 1 9.5 3 6.5S9.5 5.5 12 9z"/></svg>
-          </a>
-          {%- endif -%}
-          {%- if p.social.orcid -%}
-          <a href="{{ p.social.orcid }}" aria-label="ORCID" title="ORCID" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2zm-2.9 6.2h1.6v9.6H9.1V8.2zm3.4 0h3.2c2 0 3.5 1.4 3.5 3.4 0 2.2-1.7 3.4-3.7 3.4h-1.5v2.8h-1.5V8.2zm1.5 1.4v4h1.5c1.4 0 2.1-.9 2.1-2s-.7-2-2.1-2h-1.5z"/></svg>
-          </a>
-          {%- endif -%}
-          {%- if p.social.linkedin -%}
-          <a href="{{ p.social.linkedin }}" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4zM8 8h3.8v2.05h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.63 4.75 6.05V23h-4v-6.7c0-1.6-.03-3.65-2.23-3.65-2.24 0-2.58 1.74-2.58 3.54V23H8z"/></svg>
-          </a>
-          {%- endif -%}
-          {%- if p.social.github -%}
-          <a href="{{ p.social.github }}" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.82 1.3 3.5.99.11-.78.42-1.3.77-1.6-2.66-.3-5.46-1.33-5.46-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.6-2.8 5.61-5.47 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg>
-          </a>
-          {%- endif -%}
-		  {%- if p.social.google_scholar -%}
-			<a href="{{ p.social.google_scholar }}" aria-label="Google Scholar" title="Google Scholar" target="_blank" rel="noopener">
-  			<svg viewBox="0 0 24 24" aria-hidden="true">
-  			<path d="M10.5 4.5L3 12l7.5 7.5V15h4.25c2.15 0 3.9 1.75 3.9 3.9v.6H21v-.6c0-4.05-3.3-7.35-7.35-7.35H10.5V4.5z"/>
-  			</svg>
-			</a>
-		  {%- endif -%}
-        </div>
-        {%- endif -%}
-      </div>
-    {%- endfor -%}
-  </div>
-</section>
+{% include people-cards.html %}

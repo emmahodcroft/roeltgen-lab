@@ -27,10 +27,9 @@
         {%- if p.social -%}
         <div class="avatar-social">
           {%- if p.social.bluesky -%}
-          <a href="{{ p.social.bluesky }}" aria-label="Bluesky" title="Bluesky" target="_blank" rel="noopener">
-            <!-- Simple placeholder butterfly mark; swap when you have a final SVG -->
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9c2.5-3.5 7-5 9-2.5S18 14 12 20C6 14 1 9.5 3 6.5S9.5 5.5 12 9z"/></svg>
-          </a>
+<a href="{{ p.social.bluesky }}" aria-label="Bluesky" title="Bluesky" target="_blank" rel="noopener">
+  <i class="fa-solid fa-butterfly"></i>
+</a>
           {%- endif -%}
           {%- if p.social.orcid -%}
           <a href="{{ p.social.orcid }}" aria-label="ORCID" title="ORCID" target="_blank" rel="noopener">

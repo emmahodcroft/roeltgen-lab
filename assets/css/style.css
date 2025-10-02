@@ -396,3 +396,15 @@ a:hover{text-decoration:underline}
   width: auto;    /* keeps correct aspect ratio */
   display: block;
 }
+
+/* for smaller screens, scale down */
+@media (max-width: 600px) {
+  .brand-mark { height: 40px; }
+  .brand-text { font-size: 1.4rem; }
+}
+
+/* Adjust spacing */
+.site-subtitle {
+  font-size: 1rem;
+  opacity: 0.8;
+}
