@@ -11,6 +11,23 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       integrity="sha512-HWFZfZtFjRf3fwLQqO1A7C4GuwtToDn5mXx3xZT8w2+O0Kvq8H+ftCsbZQtrjJrqjjsWZQbpD4Vd5fCjcC13UQ=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Modern, scalable favicon -->
+  <link rel="icon" href="{{ '/assets/img/brand/favicon.svg' | relative_url }}" type="image/svg+xml" sizes="any">
+
+  <!-- PNG fallback for browsers that don’t use SVG favicons -->
+  <link rel="icon" href="{{ '/assets/img/brand/favicon-32.png' | relative_url }}" sizes="32x32" type="image/png">
+
+  <!-- Apple touch icon (iOS home screen) -->
+  <link rel="apple-touch-icon" href="{{ '/assets/img/brand/apple-touch-icon.png' | relative_url }}" sizes="180x180">
+
+  <!-- Safari pinned tab (monochrome SVG) -->
+  <link rel="mask-icon" href="{{ '/assets/img/brand/safari-pinned-tab.svg' | relative_url }}" color="#111111">
+
+  <!-- Legacy fallback (optional) -->
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+
+
 </head>
 <body>
   {% include header.html %}

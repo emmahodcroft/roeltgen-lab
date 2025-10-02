@@ -357,3 +357,42 @@ a:hover{text-decoration:underline}
   z-index: 2;
 }
 
+/* Logo SVG styling */
+.site-brand { display:flex; align-items:center; gap:.5rem; }
+.brand-mark svg { height:28px; width:auto; display:block; }
+.dark .brand-mark svg { fill: currentColor; }  /* if your SVG paths use fill=currentColor */
+
+
+.branding {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none; /* optional */
+}
+
+.brand-mark svg {
+  height: 28px;  /* adjust as needed */
+  width: auto;
+  display: block;
+}
+
+.brand-text {
+  font-size: 2rem; /* matches your title size */
+  font-weight: 600;
+}
+.site-subtitle {
+  font-size: 0.95rem;
+  opacity: 0.8; /* lighter look */
+}
+
+.brand-mark {
+  height: 64px;   /* or 32px if you prefer */
+  width: auto;    /* keeps correct aspect ratio */
+  display: block;
+}
