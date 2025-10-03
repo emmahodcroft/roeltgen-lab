@@ -47,7 +47,7 @@ a:hover{text-decoration:underline}
 .site-header{background:#fff;border-bottom:1px solid rgba(0,0,0,0.06);position:sticky;top:0;z-index:40}
 .navbar{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.8rem 0}
 .branding{display:flex;align-items:baseline;gap:.5rem}
-.branding .site-title{font-family:var(--font-serif);font-weight:800;letter-spacing:.4px;color:var(--color-primary);font-size:1.55rem;margin:0}
+.branding .site-title{font-family:var(--font-serif);font-weight:800;letter-spacing:.4px;color:var(--color-primary);font-size:1.55rem;margin:0;text-decoration:none;}
 .branding .site-subtitle{color:rgba(0,0,0,.6);font-size:1.05rem}
 .nav-links{display:flex;gap:1rem;align-items:center;font-size:1.05rem}
 .nav-toggle{display:none}
@@ -122,6 +122,16 @@ a:hover{text-decoration:underline}
 }
 .avatar-name { font-weight:700; line-height:1.25; }
 .avatar-role { font-size:0.9rem; color: rgba(0,0,0,0.6); }
+
+/* Subtle hover effect for site title/logo */
+.site-brand:hover {
+  text-decoration: none;                /* keep no underline */
+  color: var(--link-hover);             /* darker primary defined in :root */
+}
+
+.site-brand:hover .brand-text {
+  color: var(--link-hover);             /* make just the text shift color */
+}
 
 /*logo styling */
 .site-logo {
