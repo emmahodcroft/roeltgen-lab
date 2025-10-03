@@ -4,7 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Welcome to Virus Immunology (VIM)! We focus on the immunology of viral infections and vaccines, combining clinical cohorts with advanced laboratory and computational approaches.
+<div class="about-intro">
+  <img src="{{ '/assets/img/brand/logo.svg' | relative_url }}" alt="VIM logo" class="about-logo">
+  <div>
+    Welcome to Virus Immunology (VIM)! We focus on the immunology of viral infections and vaccines, combining clinical cohorts with advanced laboratory and computational approaches.
+  </div>
+</div>
+
 
 <div class="grid grid-2 about-columns">
   <section>

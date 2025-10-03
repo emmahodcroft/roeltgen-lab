@@ -124,14 +124,46 @@ a:hover{text-decoration:underline}
 .avatar-role { font-size:0.9rem; color: rgba(0,0,0,0.6); }
 
 /* Subtle hover effect for site title/logo */
+
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
 .site-brand:hover {
   text-decoration: none;                /* keep no underline */
+  transform: scale(1.05);             /* slight zoom */
   color: var(--link-hover);             /* darker primary defined in :root */
 }
 
 .site-brand:hover .brand-text {
   color: var(--link-hover);             /* make just the text shift color */
 }
+
+.site-brand:hover .brand-mark {
+  filter: brightness(0.9) saturate(1.15);
+}
+
+/*.brand-mark {
+  transition: filter 0.25s ease, transform 0.25s ease;
+}*/
+
+.site-brand:hover .brand-mark {
+  filter: brightness(0.85) saturate(1.2);
+  /*transform: scale(1.04); /* tiny zoom for a “lifted” feel */
+}
+
+
+/* right menu - zoom slightly, darken, and bold on hover*/
+header a:hover { 
+  text-decoration: none; 
+  transform: scale(1.05);
+  color: var(--link-hover);
+  font-weight: 500; 
+}
+
 
 /*logo styling */
 .site-logo {
@@ -419,4 +451,18 @@ a:hover{text-decoration:underline}
 .site-subtitle {
   font-size: 1rem;
   opacity: 0.8;
+}
+
+/* logo on about page */
+.about-intro {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;       /* space between logo and text */
+  margin-bottom: 1.5rem;
+}
+
+.about-intro .about-logo {
+  width: 50px;       /* adjust to taste */
+  height: auto;
+  flex-shrink: 0;
 }
