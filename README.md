@@ -58,7 +58,7 @@ Serve the website locally:
 bundle exec jekyll serve
 ```
 
-It should show a message something like:
+It should show a message something like (path to the files will be different, of course!):
 ```bash
 Configuration file: /home/emma/git_stuff/roeltgen-lab/_config.yml
             Source: /home/emma/git_stuff/roeltgen-lab
@@ -68,11 +68,11 @@ Configuration file: /home/emma/git_stuff/roeltgen-lab/_config.yml
        Jekyll Feed: Generating feed for posts
                     done in 0.38 seconds.
  Auto-regeneration: enabled for '/home/emma/git_stuff/roeltgen-lab'
-    Server address: http://127.0.0.1:4000/roeltgen-lab/
+    Server address: http://127.0.0.1:4000/
   Server running... press ctrl-c to stop.
 ```
 
-Now open http://127.0.0.1:4000/roeltgen-lab/ in your browser and you'll see website you're 'running' locally! If you make changes to the files, you can refresh the local website, and you should see them. 
+Now open http://127.0.0.1:4000/ in your browser and you'll see website you're 'running' locally! If you make changes to the files, you can refresh the local website, and you should see them. 
 
 To stop 'running' the website, use `Ctrl+C` on Windows.
 
