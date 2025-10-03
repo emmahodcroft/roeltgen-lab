@@ -27,6 +27,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
+
 
 branding:
   primary: "#1f6f78"

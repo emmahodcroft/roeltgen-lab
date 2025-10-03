@@ -27,6 +27,22 @@
   <!-- Legacy fallback (optional) -->
   <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
 
+  <!-- social media previews -->
+   {%- assign ogimg = site.url | append: '/assets/img/home/social-card.png' -%}
+  <link rel="icon" href="{{ '/assets/img/icons/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/icons/apple-touch-icon.png' | relative_url }}">
+
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}">
+  <meta property="og:image" content="{{ ogimg }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description }}">
+  <meta name="twitter:image" content="{{ ogimg }}">
+
 
 </head>
 <body>

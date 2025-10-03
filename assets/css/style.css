@@ -527,3 +527,11 @@ header a:hover {
   height: auto;
   flex-shrink: 0;
 }
+
+
+/* 404 emoji */
+.page-404 .emoji {
+  font-size: 2em;     /* a bit bigger than text */
+  line-height: 1;
+  vertical-align: -0.15em;
+}
