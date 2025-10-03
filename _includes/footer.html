@@ -1,13 +1,54 @@
-
-<footer class="site-footer">
+<footer class="site-footer site-footer--dark">
   <div class="container footer-grid">
-    <div>© {{ "now" | date: "%Y" }} {{ site.title }}. Built with Jekyll.</div>
-    <div class="footer-social">
-      {% assign s = site.data.socials %}
-      {% if s.github %}<a href="https://github.com/{{ s.github }}">GitHub</a>{% endif %}
-      {% if s.twitter %} · <a href="https://twitter.com/{{ s.twitter }}">Twitter</a>{% endif %}
-      {% if s.mastodon %} · <a href="https://{{ s.mastodon | replace: '@','/' }}">Mastodon</a>{% endif %}
-      {% if s.email %} · <a href="mailto:{{ s.email }}">Email</a>{% endif %}
+    <!-- Brand / Tagline / Address -->
+    <div class="footer-brand">
+      <a class="footer-brand-link" href="{{ '/' | relative_url }}">
+        <img class="footer-logo" src="{{ '/assets/img/brand/logo.svg' | relative_url }}" alt="{{ site.title }} logo">
+        <div class="footer-brand-texts">
+          <div class="footer-title">{{ site.title }}</div>
+          <div class="footer-tagline">
+            {{ page.hero_subtitle | default: site.description }}
+          </div>
+        </div>
+      </a>
+      <address class="footer-address">
+        <!-- Replace with your real address -->
+        VIM – Virus Immunology Group<br>
+        Swiss TPH, Kreuzstrasse 2, 4123 Allschwil, CH
+      </address>
+    </div>
+
+    <!-- Site links -->
+    <nav class="footer-links">
+      <div class="footer-heading">Pages</div>
+      <ul>
+        {% for item in site.data.nav %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <!-- Latest posts -->
+    <div class="footer-latest">
+      <div class="footer-heading">Latest posts</div>
+      <ul>
+        {% for post in site.posts limit:3 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="footer-post-date">{{ post.date | date: "%b %e, %Y" }}</span>
+          </li>
+        {% endfor %}
+        {% unless site.posts and site.posts.size > 0 %}
+          <li class="footer-empty">No posts yet.</li>
+        {% endunless %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <div>© {{ site.time | date: '%Y' }} {{ site.title }}</div>
+      <div><a href="{{ '/feed.xml' | relative_url }}">RSS</a></div>
     </div>
   </div>
 </footer>
