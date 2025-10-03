@@ -4,7 +4,6 @@ role: Principal Investigator
 order: 1
 team: member
 photo: /assets/img/people/katharina.jpg
-email: katharina.roeltgen@example.org
 social:
   orcid:     https://orcid.org/0000-0002-1582-1720
   linkedin:  https://ch.linkedin.com/in/katharina-r%C3%B6ltgen-187518118

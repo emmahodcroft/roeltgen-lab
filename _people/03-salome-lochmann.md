@@ -4,7 +4,6 @@ role: Pre-PhD Student
 order: 3
 team: member
 photo: /assets/img/people/salome.jpg
-email: salome@example.org
 social:
   bluesky:   https://bsky.app/profile/your-handle
   orcid:     https://orcid.org/0000-0000-0000-0000

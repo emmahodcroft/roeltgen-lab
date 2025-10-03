@@ -4,7 +4,6 @@ role: MSc student
 order: 5
 team: member
 photo: /assets/img/people/nema.jpg
-email: nema@example.org
 social:
   bluesky:   https://bsky.app/profile/your-handle
   orcid:     https://orcid.org/0000-0000-0000-0000

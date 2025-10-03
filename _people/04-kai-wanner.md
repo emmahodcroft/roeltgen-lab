@@ -4,7 +4,6 @@ role: MSc student
 order: 4
 team: member
 photo: /assets/img/people/kai.jpg
-email: kai@example.org
 social:
   bluesky:   https://bsky.app/profile/your-handle
   orcid:     https://orcid.org/0000-0000-0000-0000

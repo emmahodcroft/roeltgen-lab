@@ -4,7 +4,6 @@ role: PhD Student
 order: 2
 team: member
 photo: /assets/img/people/martin.jpg
-email: martin@example.org
 social:
   orcid:     https://orcid.org/0000-0001-6200-9578
   linkedin:  https://ch.linkedin.com/in/martin-montiel-ruiz-5448b766
