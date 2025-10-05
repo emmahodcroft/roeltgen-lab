@@ -12,5 +12,6 @@ social:
 interests:
   - Zipping around on her scooter
   - Finding delicious cake
+  - Fearlessly riding on any roller coaster at EuropaPark
 ---
 Interested in B-cell responses and neutralization assays.
