@@ -1,5 +1,5 @@
 ---
-name: Martin Monteil-Ruiz
+name: Martin Montiel-Ruiz
 role: PhD Student
 order: 2
 team: member
