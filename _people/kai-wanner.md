@@ -5,10 +5,7 @@ order: 4
 team: member
 photo: /assets/img/people/kai.jpg
 social:
-  bluesky:   https://bsky.app/profile/your-handle
-  orcid:     https://orcid.org/0000-0000-0000-0000
-  linkedin:  https://www.linkedin.com/in/your-handle/
-  github:    https://github.com/your-handle
+  github:    https://github.com/RealKaiWanner
 interests:
   - Finishing the last slice of cake
   - Combining computers & labwork
