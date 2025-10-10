@@ -5,10 +5,7 @@ order: 3
 team: member
 photo: /assets/img/people/Salomé_Profilbild.jpg
 social:
-  bluesky:   https://bsky.app/profile/your-handle
-  orcid:     https://orcid.org/0000-0000-0000-0000
-  linkedin:  https://www.linkedin.com/in/your-handle/
-  github:    https://github.com/your-handle
+  linkedin:  https://www.linkedin.com/in/salom%C3%A9-lochmann-981572278/
 interests:
   - Zipping around on her scooter
   - Finding delicious cake
