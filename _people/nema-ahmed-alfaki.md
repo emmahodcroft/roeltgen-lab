@@ -5,10 +5,7 @@ order: 5
 team: member
 photo: /assets/img/people/nema.jpg
 social:
-  bluesky:   https://bsky.app/profile/your-handle
-  orcid:     https://orcid.org/0000-0000-0000-0000
-  linkedin:  https://www.linkedin.com/in/your-handle/
-  github:    https://github.com/your-handle
+  
 interests:
   - Tackling the latest lab techniques
   - Enjoying a sweet treat
