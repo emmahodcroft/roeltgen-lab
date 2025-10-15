@@ -49,8 +49,7 @@ bundle config set path 'vendor/bundle'
 
 Install bundler, and then the gems needed
 ```bash
-# gem install bundler
-micromamba install -n jekyll-vim bundler # this is hopefully more stable, give feedback to Emma
+# gem install bundler  # This may cause issues - try without, feedback to Emma!
 bundle install
 ```
 
