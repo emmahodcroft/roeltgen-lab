@@ -49,7 +49,7 @@ bundle config set path 'vendor/bundle'
 
 Install bundler, and then the gems needed
 ```bash
-gem install bundler
+# gem install bundler  # This may cause issues - try without, feedback to Emma!
 bundle install
 ```
 
@@ -109,11 +109,11 @@ To edit images, you can either replace the existing images (in folder `/assets/i
 - [x] Add logo as icon too
 - [x] Do automatic rebuilds by Github
 - [x] Resize pictures in projects & collaborations
-- [ ] Put real info in all people profiles
-- [ ] Update links in bottom right (Github, Twitter)
-- [ ] Fill in all people pages
-- [ ] Add more projects
-- [ ] Add more collaborations
+- [x] Put real info in all people profiles
+- [x] Update links in bottom right (Github, Twitter)
+- [x] Fill in all people pages
+- [x] Add more projects
+- [x] Add more collaborations
 - [ ] Add a first blog post?
 
 
