@@ -11,7 +11,7 @@ interests:
   - Enjoying a sweet treat
 ---
 
-Nema Ahmed Alfaki is an MSc student at Swiss TPH who is pursuing her MSc project in both [EVE](https://eve-lab.org/) and VIM.
+Nema Ahmed Alfaki is a MSc student at Swiss TPH who is pursuing her MSc project in both [EVE](https://eve-lab.org/) and VIM.
 
 Nema’s MSc project explores the epidemiology and genetic diversity of seasonal human coronaviruses (HCoVs) in Ghana, using samples from an ongoing longitudinal study initiated in 2023. The project aims to assess the incidence of HCoV infections in rural and urban settings and compare these findings to global patterns.
 
