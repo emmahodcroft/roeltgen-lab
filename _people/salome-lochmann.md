@@ -6,8 +6,9 @@ team: member
 photo: /assets/img/people/Salomé_Profilbild.jpg
 social:
   linkedin:  https://www.linkedin.com/in/salom%C3%A9-lochmann-981572278/
+  github: https://github.com/salomelochmann
 interests:
-  - Zipping around on her scooter
+  - Zipping around on her bike
   - Finding delicious cake
   - Fearlessly riding on any roller coaster at EuropaPark
 ---
