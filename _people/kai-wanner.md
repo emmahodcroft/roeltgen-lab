@@ -11,7 +11,7 @@ interests:
   - Combining computers & labwork
 ---
 
-Kai Wanner is a MSc student at Swiss TPH who is pursuing his MSc project in both [EVE](https://eve-lab.org/) and VIM.
+Kai Wanner is an MSc student at Swiss TPH who is pursuing his MSc project in both [EVE](https://eve-lab.org/) and VIM.
 
 Kai’s MSc project focuses on investigating the prevalence and diversity of Enteroviruses (EVs) in Ghana, using samples from an ongoing longitudinal study. Despite EVs being widespread globally, their circulation and impact in African populations remain underexplored. This project will target key EVs such as EV-D68, EV-A71, CVA6, and CVA16.
 
