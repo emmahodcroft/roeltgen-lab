@@ -1,20 +1,17 @@
 ---
 name: Nils Langer
 role: MSc Student
-order: 7
+order: 9
 team: member
-photo: /assets/img/people/Martin_Profilbild.jpg
+photo: /assets/img/people/nils.jpg
 social:
-  orcid:     https://orcid.org/0000-0001-6200-9578
-  linkedin:  https://ch.linkedin.com/in/martin-montiel-ruiz-5448b766
-  github:    https://github.com/martinmontielr
+  linkedin:  https://www.linkedin.com/in/nils-langer-17aa68381
 interests:
-  - Making just one more cup of coffee
-  - Preparing the most delicious guacamole
-  - Recalling the antibody goat
+  - Going into the gym early in the morning
+  - Looking after his horse
+  - Investigating Influenza
 ---
-Martin is a PhD student specializing in Viral Immunology (VIM) at the Swiss Tropical and Public Health Institute (Swiss TPH). He holds an MSc in Biotechnology from McGill University and has extensive industry experience as a Senior Research Associate at Regeneron Pharmaceuticals and Scientist I at Vir Biotechnology. His work has involved a variety of viruses including HIV, Influenza, RSV, MPV, SARS-CoV-2 and AAV. During that time he contributed to the development of cutting-edge antiviral therapies such as monoclonal antibodies and siRNAs.
+Nils is an MSc student at Swiss TPH who is pursuing his MSc project in VIM. 
+Nils MSc project aims to develop a capture assay for the detection of Influenza A viruses. This assay will subsequently be established in a kit for a new device that enables real-time identification and quantification of airborne pathogens. Influenza A is of particular importance due to its high mutation rate, zoonotic potential, and its role in seasonal epidemics as well as global pandemics, making rapid and reliable detection is essential for public health. 
 
-Currently, Martin’s project focuses on exploring the humoral immune responses to SARS-CoV-2 and other human coronaviruses within the Ghanaian population. Using advanced NextGen Single Cell B-cell Receptor sequencing, he investigates the genetic makeup of immune repertoires to understand their unique features and potential role in the relatively milder COVID-19 outcomes observed in Ghana. In addition, Martin is exploring the pre-pandemic antibody cross-reactivity to zoonotic sarbecoviruses and their potential implications in protectivity against SARS-CoV-2. 
-
-Outside of his academic pursuits, Martin seeks adventure through swimming, biking, hiking, and traveling. Reading and tessellation also capture his interest, offering both relaxation and inspiration.
+Nils will be using hybridoma technology to develop a capture assay for detecting the Influenza A surface protein hemagglutinin. By combining immunological assays (ELISA) with antibody purification techniques, he aims to generate highly specific monoclonal antibodies that target the hemagglutinin. In addition, the project includes the production of a pseudo virus to support assay development and validation. Antigen-specific B cell sorting using FACS is also planned to further enhance antibody selection. 

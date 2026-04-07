@@ -4,7 +4,8 @@ title: Home
 hero_title: Röltgen Lab — Virus Immunology
 hero_subtitle: "From infection to protection: investigating immune responses to viruses and vaccines"
 photos:
-  - /assets/img/home/vim_paper_celeb_crop.jpg
+  - /assets/img/home/group foto lab (March 26).jpg
+  - /assets/img/home/group foto outside (March 26).jpg
   - /assets/img/home/msd2.JPEG
   - /assets/img/home/bsc.JPEG
   - /assets/img/home/bench.JPEG
