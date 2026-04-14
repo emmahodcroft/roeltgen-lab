@@ -1,7 +1,7 @@
 ---
 name: Nema Ahmed Alfaki
-role: MSc student
-order: 5
+role: MSc Student
+order: 7
 team: member
 photo: /assets/img/people/nema.jpg
 social:
